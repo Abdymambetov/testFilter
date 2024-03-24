@@ -1,0 +1,55 @@
+.main{
+    width: 1600px;
+    margin: 100px auto;
+
+    & .users{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 8px;
+        row-gap: 8px;
+    }
+
+    & .head{
+        width: 88.5%;
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 8px;
+
+        & .updateUsers{
+            height: 20px;
+            border:none;
+            background-color: gainsboro;
+        }
+    }
+}
+.loading{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: gainsboro;
+}
+
+
+
+@media (max-width: 391px){
+  .main {
+    width: 300px;
+
+    & .users {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & .head {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 8px;
+      padding: 0px 35px;
+    }
+  }
+}
